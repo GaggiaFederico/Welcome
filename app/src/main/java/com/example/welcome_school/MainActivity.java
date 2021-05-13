@@ -29,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void play(View view){
         Intent intent = new Intent(MainActivity.this, Pagina1.class);
-        intent.putExtra("stringa", editText.getText());
+        intent.putExtra("stringa", String.valueOf(editText.getText()));
         startActivity(intent);
     }
 }
+
+
+
